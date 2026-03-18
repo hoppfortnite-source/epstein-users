@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discord Username Marketplace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    Minimalist design aims for simplicity and clarity. According to web‑design guidance, minimalist
+    interfaces focus on essential content and remove unnecessary elements to create a clean user
+    experience【689608681701467†L31-L41】. A limited colour palette and simple typography also
+    help avoid visual clutter【689608681701467†L57-L66】. This markup uses semantic tags and
+    defers most styling to an external stylesheet to maintain separation of concerns.
+  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">Discord Username Marketplace</h1>
+    <p class="tagline">High‑quality unique usernames at your fingertips</p>
+  </header>
+
+  <main class="container">
+    <section class="product-section">
+      <h2>Available Categories</h2>
+      <!-- A responsive table lists the current categories, prices and stock. The
+           table body is dynamically populated by JavaScript so that adjusting
+           prices or stock only requires updating a single configuration array. -->
+      <div class="table-wrapper">
+        <table id="product-table" class="product-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Description</th>
+              <th>Price (USD)</th>
+              <th>Stock</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filled by script.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="cta">
+      <!-- The call‑to‑action encourages users to join the Discord server.
+           The link is updated via JavaScript using the same discordLink variable
+           used for purchase buttons, so you only need to change it in one place. -->
+      <p>
+        Ready to claim your unique username? Join our
+        <a href="#" id="discord-link" class="cta-link" target="_blank" rel="noopener noreferrer">Discord server</a>
+        and open a ticket to purchase.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Username Marketplace. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
