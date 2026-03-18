@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Epstein&#39;s Users – Stock</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    Stock page for Epstein's Users. This page lists the current inventory
+    of rare four‑letter usernames along with their prices and stock levels.
+    Separating the stock into its own page simplifies navigation and keeps
+    the home page focused on branding【689608681701467†L31-L41】.
+  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">Epstein&#39;s Users</h1>
+    <p class="tagline">Current inventory of rare 4‑letter usernames</p>
+  </header>
+
+  <main class="container">
+    <!-- Floating names display the available usernames in stock; they bounce
+         behind the content to subtly reinforce exclusivity. -->
+    <div class="floating-names">
+      <span class="floating-name">apb4</span>
+      <span class="floating-name">xuqg</span>
+      <span class="floating-name">zdbv</span>
+      <span class="floating-name">xqbu</span>
+      <span class="floating-name">kbyb</span>
+      <span class="floating-name">cqup</span>
+      <span class="floating-name">oqhc</span>
+      <span class="floating-name">zprw</span>
+      <span class="floating-name">srsk</span>
+      <span class="floating-name">unxr</span>
+      <span class="floating-name">jnqd</span>
+    </div>
+    <section class="product-section">
+      <h2>Available Stock</h2>
+      <div class="table-wrapper">
+        <table id="product-table" class="product-table">
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Price (USD)</th>
+              <th>Stock</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filled by script.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="cta">
+      <p>
+        Ready to claim your unique username? Join our
+        <a href="#" id="discord-link" class="cta-link" target="_blank" rel="noopener noreferrer">Discord server</a>
+        and navigate to the <strong>purchase</strong> channel to complete your purchase.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Epstein&#39;s Users. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
